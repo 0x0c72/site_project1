@@ -1,0 +1,37 @@
+#addinfo-form {
+	display: inline-block;
+	width: 225px;
+	font-weight: bold;
+}
+
+button#addinfo-submit {
+	width: 90px;
+	height: 30px;
+}
+
+button#addinfo-submit:hover {
+
+}
+
+#header-logo {
+	width: 160px;
+	height: 140px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#header-wrapper {
+	background-color: black;
+}
+
+#nav-wrapper {
+	background-color: gray;
+	height: 40px;
+	width: 100%;
+	border-top: 2px solid green;
+}
+
+:required {
+
+}

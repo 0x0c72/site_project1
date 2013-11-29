@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" href="js/script.js"></script>
+		<title>Add to Database</title>
+		<link rel="icon" type="image/icon" href="images/favicon.ico">
+		<link rel="shortcut-icon" type="image/icon" href="images/favicon.ico">
+	</head>
+	<body>
+		<div id="header-wrapper">
+			<div id="header">
+				<image id="header-logo" src="images/klogo1.png"></image>
+			</div>
+		</div>
+		<div id="nav-wrapper">
+		</div>
+		<div id="form-header">
+			<h2>Add your contact information and preferences</h2>
+		</div>
+		<br /><br />
+
+		<form id="addinfo-form" method="post" action="adddb.php">
+			<label for="firstname">First Name:</label>
+			<input type="text" id="firstname" name="firstname" title="Please enter your first name" placeholder="Enter your first name" required />
+			<br /><br />
+			<label for="lastname">Last Name:</label>
+			<input type="text" id="lastname" name="lastname" title="Please enter your last name" placeholder="Enter your last name" required />
+			<br /><br />
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" title="Please enter your email" placeholder="Enter your email address" required />
+			<br /><br />
+			<label for="age">Age:</label>
+			<input type="number" id="age" name="age" title="Please enter your age" placeholder="Enter your age" pattern=".{0,9}" required />
+			<br /><br />
+			<label for="gender">Gender:</label>
+			<select id="gender" name="gender" required>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			</select>
+			<br /><br />
+			<button id="addinfo-submit" type="submit" title="Submit Info" name="submit">Add Info</button>
+		</form>
+	</body>
+</html>
