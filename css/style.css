@@ -1,3 +1,6 @@
+body {
+	font-family: sans-serif;
+}
 #addinfo-form {
 	display: inline-block;
 	width: 225px;
@@ -13,10 +16,40 @@ button#addinfo-submit:hover {
 
 }
 
+form label {
+  display: inline-block;
+  width: 225px;
+  font-weight: bold;
+}
+
+div#header {
+	font-color: blue;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#addinfo-form > input:focus {
+	background: yellow;
+}
+
+#addinfo-form > input:focus:hover {
+	background: white;
+}
+
+#page-content {
+	background: linear-gradient(to bottom right, black, gray, black);
+}
+
+#sub-header {
+	
+}
+
 #header-logo {
 	width: 160px;
 	height: 140px;
-	margin: 0px;
+	margin: 0 100px 0 0;
 	padding: 0px;
 	border: none;
 }
@@ -26,10 +59,32 @@ button#addinfo-submit:hover {
 }
 
 #nav-wrapper {
-	background-color: gray;
+	background-color: black;
 	height: 40px;
 	width: 100%;
-	border-top: 2px solid green;
+	border-top: 2px solid gray;
+	border-radius: 0 0 5px 5px;
+}
+
+#navbar {
+}
+
+ul#nav li {	
+	display: inline;
+	font-family: sans-serif;
+	font-size: 18px;
+	text-align: center;
+	width: 20px;
+	margin: 0 10px 10px 0;
+}
+
+ul#nav * a:hover {
+	font-color: white;
+	text-shadow: 2px 2px yellow;
+} 
+
+ul#nav * a:active {
+	font-style: bold;
 }
 
 :required {
