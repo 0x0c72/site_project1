@@ -31,7 +31,7 @@
 		//mail($to, $subject, $msg, 'From: ' . $from);
 
 		echo '<b>First Name:</b> ' . $row['firstName'] . ' <b>Last Name:</b> ' . $row['lastName'] .
-		' <b>Email:</b> ' . $row['email'] . '<br />';
+		' <b>Email:</b> ' . $row['email'] . '<br>';
 	}
 
 	mysqli_close($dbc);
